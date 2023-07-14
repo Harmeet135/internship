@@ -17,7 +17,7 @@ const Home = () => {
   const { dltdata, setDLTdata } = useContext(deldata);
 
   const getInput = async (e) => {
-    const res = await fetch("/getdata", {
+    const res = await fetch("https://internhsip.onrender.com/getdata", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
