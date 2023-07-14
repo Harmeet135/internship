@@ -24,7 +24,7 @@ const Update = () => {
   const { id } = useParams();
 
   const getInput = async () => {
-    const res = await fetch(`/getdata/${id}`, {
+    const res = await fetch(`https://internhsip.onrender.com/getdata/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -49,7 +49,7 @@ const Update = () => {
   const updated = async (e) => {
     e.preventDefault();
     const { name, price, details, selectedFile } = inpval;
-    const res2 = await fetch(`/update/${id}`, {
+    const res2 = await fetch(`https://internhsip.onrender.com/update/${id}`, {
       method: "PATCH",
       body: JSON.stringify({
         name,
