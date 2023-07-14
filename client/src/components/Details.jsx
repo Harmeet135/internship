@@ -18,7 +18,7 @@ const Details = () => {
 
   const getInput = async (e) => {
     const res = await fetch(
-      `/getdata/${id}`,
+      `https://internhsip.onrender.com/getdata/${id}`,
       {
         method: "GET",
         headers: {
@@ -44,7 +44,7 @@ const Details = () => {
 
   const deleteData = async (id) => {
     const deleted = await fetch(
-      `/delete/${id}`,
+      `https://internhsip.onrender.com/delete/${id}`,
       {
         method: "DELETE",
         headers: {
