@@ -41,7 +41,7 @@ const Home = () => {
 
   const deleteData = async (id) => {
     const deleted = await fetch(
-      `/delete/${id}`,
+      `https://internhsip.onrender.com/delete/${id}`,
       {
         method: "DELETE",
         headers: {
