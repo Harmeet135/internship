@@ -37,7 +37,7 @@ const Register = () => {
     }
 
     try {
-      const res = await fetch("/register", {
+      const res = await fetch("https://internhsip.onrender.com/register", {
         method: "POST",
         body: JSON.stringify({
           name,
